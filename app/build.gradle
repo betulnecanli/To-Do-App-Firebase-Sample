@@ -1,6 +1,10 @@
 plugins {
     id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
@@ -41,4 +45,24 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // Fragment
+    implementation "androidx.fragment:fragment-ktx:$fragmentVersion"
+
+    // Lifecycle + ViewModel & LiveData
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.0"
+    implementation "android.arch.lifecycle:common-java8:1.1.1"
+
+    // Navigation Component
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+
+    //Dagger Hilt
+    implementation 'com.google.dagger:hilt-android:2.42'
+    kapt 'com.google.dagger:hilt-compiler:2.42'
 }
