@@ -45,7 +45,7 @@ To run this app, you'll need to have Android Studio installed. Follow these step
 <h2 align="center">📚 Tech Stack </h2>
 
 - ViewBinding
-- Firebase
+- Firebase(Authentication, Storage)
 - Navigation Components
 - Flow
 - Coroutines
