@@ -21,6 +21,11 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures {
+        viewBinding true
+    }
+
+
     buildTypes {
         release {
             minifyEnabled false
@@ -65,4 +70,12 @@ dependencies {
     //Dagger Hilt
     implementation 'com.google.dagger:hilt-android:2.42'
     kapt 'com.google.dagger:hilt-compiler:2.42'
+
+    //firebase
+    //auth
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    //storage
+    implementation 'com.google.firebase:firebase-storage:21.0.1'
+
+
 }
