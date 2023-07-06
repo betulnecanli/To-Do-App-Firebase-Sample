@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "814735206020",
+    "project_id": "ailist-32da1",
+    "storage_bucket": "ailist-32da1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814735206020:android:0272eb153a37745cc504d1",
+        "android_client_info": {
+          "package_name": "com.betulnecanli.todoappfirebasesample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814735206020-mb95v2ek2lece9vqstko3p3684u4fecf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIwtBYjDGfWYt2yXS3ucKf-kNkLhcQTrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814735206020-mb95v2ek2lece9vqstko3p3684u4fecf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "814735206020-he4mif88b6k5c036l10upn3d5d7mu7eh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.goksubay.Ailist"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
