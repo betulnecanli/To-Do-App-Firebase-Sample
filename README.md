@@ -1,5 +1,5 @@
 # 
-#  <h1 align="center">⚡️ ToDo App Firebase Sample</h1>
+#  <h1 align="center">🔥 ToDo App Firebase Sample</h1>
 
 <p align="center">ToDo App Firebase Sample is a simple yet powerful task management application that demonstrates the implementation of Firebase libraries for authentication and other essential functionalities. This repository serves as a comprehensive guide for developers looking to integrate Firebase services into their own applications.</p><br>
 
