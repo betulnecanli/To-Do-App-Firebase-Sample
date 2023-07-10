@@ -7,15 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.betulnecanli.todoappfirebasesample.R
 import com.betulnecanli.todoappfirebasesample.databinding.FragmentDetailBinding
+import com.betulnecanli.todoappfirebasesample.scenes.main.home.HomeAdapter
 
 
 class DetailFragment : Fragment(R.layout.fragment_detail) {
 
     lateinit var binding: FragmentDetailBinding
     private val viewModel : DetailViewModel by viewModels()
-
+    private lateinit var adapter: DetailAdapter
     val args: DetailFragmentArgs by navArgs()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -23,7 +25,27 @@ class DetailFragment : Fragment(R.layout.fragment_detail) {
         binding = FragmentDetailBinding.bind(view)
 
         // Retrieve the argument value
-        val argumentValue = args.documentId
+        val argID = args.documentId
+        val argTitle = args.title
+
+        binding.itemName.text = argTitle
+        viewModel.setDocumentId(argID)
+        setupAdapter()
+        viewModel.observeTodoList()
+        viewModel.getTaskList().observe(viewLifecycleOwner) { todoList ->
+            val stringList2 = todoList.distinct()
+            adapter.differ.submitList(stringList2)
+        }
+
+    }
+
+    fun setupAdapter(){
+        binding.apply {
+            itemsList.layoutManager = LinearLayoutManager(requireContext())
+            adapter = DetailAdapter()
+            itemsList.adapter = adapter
+
+        }
     }
 
     override fun onCreateView(

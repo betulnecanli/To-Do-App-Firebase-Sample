@@ -62,7 +62,7 @@ class HomeFragment : Fragment(R.layout.fragment_home), HomeAdapter.OnItemClickLi
 
     override fun onItemClick(list: CheckList) {
         //navigate using doc ID
-        val action = HomeFragmentDirections.actionHomeFragmentToDetailFragment(list.document_id)
+        val action = HomeFragmentDirections.actionHomeFragmentToDetailFragment(list.document_id,list.list_name)
         findNavController().navigate(action)
 
     }
