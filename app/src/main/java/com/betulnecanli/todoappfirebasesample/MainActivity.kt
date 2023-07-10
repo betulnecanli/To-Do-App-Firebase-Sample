@@ -33,9 +33,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Initialize Firebase. This is necessary to set up Firebase services in your application.
+        FirebaseApp.initializeApp(this)
+
 
         //notification
-        FirebaseApp.initializeApp(this)
+        // Get the Firebase Messaging instance and retrieve the FCM registration token
         FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
             if (!task.isSuccessful) {
                 Log.w("Token for Firebase", "Fetching FCM registration token failed", task.exception)
@@ -47,10 +50,15 @@ class MainActivity : AppCompatActivity() {
 
             // Log and toast
             Log.d("Token for Firebase", token)
+            Toast.makeText(this,token,Toast.LENGTH_LONG).show()
              })
 
-
-
+     /*   try {
+            val result = 10 / 0
+        } catch (e: Exception) {
+            throw RuntimeException("An error occurred: ${e.message}")
+        }
+*/
 
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView2)

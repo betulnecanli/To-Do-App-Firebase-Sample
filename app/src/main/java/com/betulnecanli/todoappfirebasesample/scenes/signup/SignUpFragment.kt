@@ -13,11 +13,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.betulnecanli.todoappfirebasesample.R
 import com.betulnecanli.todoappfirebasesample.databinding.FragmentSignUpBinding
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.OAuthProvider
 
 class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
 
