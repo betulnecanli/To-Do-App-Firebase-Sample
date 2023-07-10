@@ -3,7 +3,9 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-parcelize'
     id 'androidx.navigation.safeargs.kotlin'
+    //gms
     id("com.google.gms.google-services")
+    //firebase crashlytics
     id 'com.google.firebase.crashlytics'
 }
 
@@ -62,10 +64,6 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
     implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
 
-    // Coroutines
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
-
 
     //firebase
     implementation(platform("com.google.firebase:firebase-bom:32.1.1"))
@@ -77,14 +75,13 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:24.1.1'
     implementation 'com.google.firebase:firebase-storage-ktx:20.0.1'
     implementation 'com.google.firebase:firebase-crashlytics-ktx:18.2.9'
-
     //google sign in
     implementation 'com.google.android.gms:play-services-auth:17.0.0'
-
-    //fb login
-   // implementation 'com.facebook.android:facebook-login:5.1.1'
-
-    //twitter login
-
-    // Include all the Twitter APIs
+    //firebase messaging
+    // Import the BoM for the Firebase platform
+    implementation(platform("com.google.firebase:firebase-bom:32.1.1"))
+    // Add the dependencies for the Firebase Cloud Messaging and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation("com.google.firebase:firebase-messaging-ktx")
+    implementation("com.google.firebase:firebase-analytics-ktx")
 }
