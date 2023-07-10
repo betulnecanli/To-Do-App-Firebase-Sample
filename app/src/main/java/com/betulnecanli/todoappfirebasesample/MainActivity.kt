@@ -73,22 +73,4 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
         finish() // Finish the current activity to prevent going back to it when logged in
     }
-
-
-
-    private fun loginUserWithEmail(email: String, password: String) {
-        auth.signInWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    // User login successful, proceed to home screen
-
-                } else {
-                   Toast.makeText(this, "Error", Toast.LENGTH_LONG).show()
-                }
-            }
-    }
-
-
-
-
 }

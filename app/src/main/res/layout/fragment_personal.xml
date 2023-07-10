@@ -7,7 +7,7 @@
     tools:context=".scenes.main.personal.PersonalFragment">
 
 
-    <Button
+    <ImageView
         android:id="@+id/button"
         android:layout_marginTop="40dp"
         android:layout_width="300dp"
@@ -21,6 +21,7 @@
 
     
     <Button
+        android:id="@+id/upload_pic"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@drawable/baseline_border_color_24"
