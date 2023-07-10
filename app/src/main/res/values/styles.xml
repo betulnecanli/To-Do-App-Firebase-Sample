@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomNavigationStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <!-- Change the background color here -->
+        <item name="android:background">#33A2FF</item>
+    </style>
+
+    <style name="Base.TextAppearance.AppCompat.Button" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="backgroundColor">@color/black</item>
+    </style>
+
+</resources>

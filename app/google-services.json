@@ -1,41 +1,34 @@
 {
   "project_info": {
-    "project_number": "814735206020",
-    "project_id": "ailist-32da1",
-    "storage_bucket": "ailist-32da1.appspot.com"
+    "project_number": "817859206823",
+    "project_id": "to-do-app-bfde3",
+    "storage_bucket": "to-do-app-bfde3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:814735206020:android:0272eb153a37745cc504d1",
+        "mobilesdk_app_id": "1:817859206823:android:baa1516cf944ef1d408582",
         "android_client_info": {
           "package_name": "com.betulnecanli.todoappfirebasesample"
         }
       },
       "oauth_client": [
         {
-          "client_id": "814735206020-mb95v2ek2lece9vqstko3p3684u4fecf.apps.googleusercontent.com",
+          "client_id": "817859206823-v4b5ql8ekdkdv36rt1p0t0ibn37p42ru.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAIwtBYjDGfWYt2yXS3ucKf-kNkLhcQTrA"
+          "current_key": "AIzaSyCCy2dhlIiqZyVP9UQX_Ga2Y78tnnDKHuk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "814735206020-mb95v2ek2lece9vqstko3p3684u4fecf.apps.googleusercontent.com",
+              "client_id": "817859206823-v4b5ql8ekdkdv36rt1p0t0ibn37p42ru.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "814735206020-he4mif88b6k5c036l10upn3d5d7mu7eh.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.goksubay.Ailist"
-              }
             }
           ]
         }

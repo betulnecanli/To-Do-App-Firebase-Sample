@@ -18,7 +18,14 @@
         android:id="@+id/detailFragment"
         android:name="com.betulnecanli.todoappfirebasesample.scenes.detail.DetailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="documentId"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/personalFragment"
         android:name="com.betulnecanli.todoappfirebasesample.scenes.main.personal.PersonalFragment"
