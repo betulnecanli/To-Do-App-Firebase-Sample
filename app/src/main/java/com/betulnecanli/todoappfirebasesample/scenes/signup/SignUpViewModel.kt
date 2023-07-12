@@ -16,6 +16,7 @@ class SignUpViewModel(application: Application) : AndroidViewModel(application) 
 
 
 
+
     fun loginWithEmailAndPassword(email: String, password: String, context : Context) {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->

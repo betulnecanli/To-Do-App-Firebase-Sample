@@ -44,7 +44,6 @@ class DetailViewModel : ViewModel(){
             val newList = mutableListOf<Task>()
             querySnapshot?.let {
                 for (document in it.documents) {
-                    Log.d("mesajjj", "${document.data}")
                     val task = document.toObject(Task::class.java)
                     if (task != null) {
                         newList.add(task)

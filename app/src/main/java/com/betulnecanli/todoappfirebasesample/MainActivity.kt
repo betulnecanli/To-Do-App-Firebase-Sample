@@ -50,15 +50,10 @@ class MainActivity : AppCompatActivity() {
 
             // Log and toast
             Log.d("Token for Firebase", token)
-            Toast.makeText(this,token,Toast.LENGTH_LONG).show()
+
              })
 
-     /*   try {
-            val result = 10 / 0
-        } catch (e: Exception) {
-            throw RuntimeException("An error occurred: ${e.message}")
-        }
-*/
+
 
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView2)

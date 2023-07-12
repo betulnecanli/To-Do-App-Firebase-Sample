@@ -74,17 +74,16 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:22.0.0'
     //analytics
     implementation 'com.google.firebase:firebase-analytics-ktx:21.3.0'
-    implementation 'com.google.firebase:firebase-analytics:20.1.2'
+    implementation 'com.google.firebase:firebase-analytics:21.3.0'
     implementation("com.google.firebase:firebase-analytics-ktx")
     //firestore
-    implementation 'com.google.firebase:firebase-firestore:24.1.1'
+    implementation 'com.google.firebase:firebase-firestore:24.6.1'
     //storage
-    implementation 'com.google.firebase:firebase-storage-ktx:20.0.1'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.2.1'
     //crashlytics
-    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.2.9'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.7'
     //firebase messaging
     // Import the BoM for the Firebase platform
-    implementation(platform("com.google.firebase:firebase-bom:32.1.1"))
     // Add the dependencies for the Firebase Cloud Messaging and Analytics libraries
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation("com.google.firebase:firebase-messaging-ktx")

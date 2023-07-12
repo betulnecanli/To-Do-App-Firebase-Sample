@@ -9,6 +9,24 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class HomeViewModel : ViewModel() {
 
+    /*
+      // Collection: "users"
+      {
+          // Document ID: "user1"
+          "name": "John Doe",  //field
+           "email": "johndoe@example.com", //field
+           "age": 25 //field
+      },
+      {
+           // Document ID: "user2"
+           "name": "Jane Smith", //field
+          "email": "janesmith@example.com", //field
+          "age": 30 //field
+          }
+
+  */
+
+
     val todoArray = MutableLiveData<List<CheckList>>()
 
     val firestore = FirebaseFirestore.getInstance()
