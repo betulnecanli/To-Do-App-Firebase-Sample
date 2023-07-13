@@ -47,7 +47,41 @@
         android:layout_marginTop="20dp"
     app:layout_constraintTop_toBottomOf="@id/password_login_et" />
 
+    <Button
+        android:id="@+id/sign_up_google_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Sıgn Up with Google"
+        android:drawableLeft="@drawable/google_logo"
+        android:backgroundTint="#EE4B2B"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/login_button" />
 
+    <Button
+        android:id="@+id/sign_up_facebook_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Sıgn Up with Facebook"
+        android:drawableLeft="@drawable/facebook"
+        android:backgroundTint="#33A2FF"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_google_button" />
+
+    <Button
+        android:id="@+id/sign_up_twitter_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="Sıgn Up with Twitter"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/twitter"
+        android:backgroundTint="#6FEEEE"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_facebook_button" />
 
     <Button
         android:id="@+id/sign_up_email_button"
@@ -59,6 +93,6 @@
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/twitter"
         android:backgroundTint="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/login_button" />
+        app:layout_constraintTop_toBottomOf="@id/sign_up_twitter_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
