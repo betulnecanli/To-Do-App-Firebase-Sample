@@ -13,6 +13,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.betulnecanli.todoappfirebasesample.R
 import com.betulnecanli.todoappfirebasesample.databinding.FragmentSignUpBinding
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 
 class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
 
@@ -20,6 +23,10 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
     private val viewModel: SignUpViewModel by viewModels {
         ViewModelProvider.AndroidViewModelFactory.getInstance(requireActivity().application)
     }
+
+    lateinit var mAdView : AdView
+
+
 
 
     override fun onCreateView(
@@ -35,6 +42,14 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentSignUpBinding.bind(view)
+
+        //initialize MobileAds
+        context?.let { MobileAds.initialize(it) {} }
+
+        //make an ad request
+        val adRequest = AdRequest.Builder().build()
+        binding.adView.loadAd(adRequest)
+
 
         binding.apply {
 
