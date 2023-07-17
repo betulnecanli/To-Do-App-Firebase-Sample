@@ -10,8 +10,8 @@
 
 
 #  <h2 align="center">🖼 Preview</h2>
-###  
 
+![](https://github.com/betulnecanli/ToDoAppFirebaseSample/blob/master/ss/ezgif-5-ccb9e9e1a4.png?raw=true)  | ![](https://github.com/betulnecanli/ToDoAppFirebaseSample/blob/master/ss/ezgif-5-724855afcb.png?raw=true)  | ![](https://github.com/betulnecanli/ToDoAppFirebaseSample/blob/master/ss/ezgif-5-45ed006cac.png?raw=true)
 
 <h2 align="center">Features⭐</h2>
 
