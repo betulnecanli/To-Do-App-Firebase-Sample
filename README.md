@@ -42,6 +42,7 @@ To run this app, you'll need to have Android Studio installed. Follow these step
    <h2 align="center">🛠 TO-DO </h2>
 - Add Google, Facebook and Twitter sign in.
 - Admob interstitial and reward ad.
+- Add dependency Injection(DaggerHilt).
 
 
 
