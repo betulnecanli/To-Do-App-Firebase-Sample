@@ -39,6 +39,10 @@ To run this app, you'll need to have Android Studio installed. Follow these step
  - Open the project in Android Studio.
  - Build and run the app.
 
+   <h2 align="center">🛠 TO-DO </h2>
+- Add Google, Facebook and Twitter sign in.
+- Admob interstitial and reward ad.
+
 
 
 
